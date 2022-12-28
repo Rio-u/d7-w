@@ -1,5 +1,7 @@
 
 
+
+
 body {
   background-image: url("backgrond2.png");
     background-size: cover;
@@ -591,19 +593,21 @@ transform: translate(-80px, 55px);
     translate: 11cm -8cm;
   }
 
+.list-image img{
+  width: 100%;
 
+}
 
   .playlist-card{
     background-color: aliceblue;
     border: 1px solid #fff;
-   min-height: 31em;
-   width: 230px;
+   min-height: 50em;
+   width: 55em;
    overflow: hidden;
    border-radius: 10px;
    margin: 30px;
    position: absolute; 
    top: 28cm;
-   left: 50%; 
    margin: 0 auto;
    position: absolute;
    left: 0;
@@ -613,41 +617,92 @@ transform: translate(-80px, 55px);
     flex-wrap: wrap;
 }
 
-  .playlist-card2{
-    background-color: aliceblue;
-    border: 1px solid #fff;
-   min-height: 31em;
-   width: 230px;
-   overflow: hidden;
-   border-radius: 10px;
-   margin: 30px;
-   position: absolute; 
-   top: 28cm;
-   left: 50%; 
-   margin: 0 auto;
-   position: absolute;
-   left: 0;
-   right: 17cm;
-   transform: scale(0.8);
-    transition: transform 0.5s;
-    flex-wrap: wrap;
+.card-text {
+  font-size: 105;
+  font-family: 'Emad-Diana eXtra';
+  border-radius: 15%; 
+  transform: translate(70px, 20%); 
+}
+
+.Play {
+  background-color: rgb(68, 85, 75);
+  left: 100px;
+  right: 80cm;
+  font-family: 'Emad-Diana eXtra';
+  font-size: 100;
+  border-radius: 15%; 
+  transform: translate(150px, 10%); 
 }
 
 
-.playlist-card3{
+.Stop {
+  background-color: rgb(68, 85, 75);;
+  top: 20%;
+  font-family: 'Emad-Diana eXtra';
+  font-size: 100;
+  border-radius: 15%; 
+  bottom: 5%; 
+  transform: translate(250px, 10%); 
+}
+
+
+.volum{
+
+color: rgb(38, 48, 42);;
+  font-family: 'Emad-Diana eXtra';
+  transform: translate(100px, 500px); 
+  
+  font-size: 80;
+
+}
+
+
+
+.Time0{
+  font-family: 'Emad-Diana eXtra';
+  font-size: 80;
+  transform: translate(1px, 10px); 
+}
+
+.range{
+transform: translate(15px, 10px); 
+width: 90%
+
+}
+
+.Vol{
+width: 120%;
+color: black;
+transform: translate(-280px, 150px); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.playlist-card2{
   background-color: aliceblue;
   border: 1px solid #fff;
- min-height: 31em;
- width: 230px;
+ min-height: 50em;
+ width: 55em;
  overflow: hidden;
  border-radius: 10px;
  margin: 30px;
  position: absolute; 
- top: 28cm;
- left: 50%; 
+ top: 75cm;
  margin: 0 auto;
  position: absolute;
- left: 17cm;
+ left: 0;
  right: 0;
  transform: scale(0.8);
   transition: transform 0.5s;
@@ -655,52 +710,332 @@ transform: translate(-80px, 55px);
 }
 
 
+.card2-text {
+  font-size: 120;
+  font-family: 'Emad-Diana eXtra';
+  border-radius: 15%; 
+  transform: translate(70px, 20%); 
+}
+
+
+
+.modified-Play {
+  background-color: rgb(68, 85, 75);
+  left: 10px;
+  right: 8cm;
+  font-size: 100;
+  font-family: 'Emad-Diana eXtra';
+  border-radius: 15%; 
+  transform: translate(150px, 10%); 
+}
+
+
+.modified-Stop {
+  background-color: rgb(68, 85, 75);;
+  top: 20%;
+  font-family: 'Emad-Diana eXtra';
+  border-radius: 15%; 
+  font-size: 100;
+  bottom: 5%; 
+  transform: translate(250px, 10%); 
+}
+
+
+.modified-volum{
+
+  color: rgb(38, 48, 42);;
+  font-family: 'Emad-Diana eXtra';
+  transform: translate(100px, 500px); 
+  
+  font-size: 80;
+
+}
+
+
+
+.modified-Time0{
+  font-family: 'Emad-Diana eXtra';
+  font-size: 80;
+  transform: translate(1px, 10px); 
+}
+
+.range2{
+  transform: translate(15px, 10px); 
+  width: 90%
+  
+}
+
+.modified-Vol{
+  width: 120%;
+  color: black;
+  transform: translate(-10px, 150px); 
+}
+
+
+
+
+
+.playlist-card3{
+  background-color: aliceblue;
+  border: 1px solid #fff;
+ min-height: 50em;
+ width: 55em;
+ overflow: hidden;
+ border-radius: 10px;
+ margin: 30px;
+ position: absolute; 
+ top: 123cm;
+ margin: 0 auto;
+ position: absolute;
+ left: 0;
+ right: 0;
+ transform: scale(0.8);
+  transition: transform 0.5s;
+  flex-wrap: wrap;
+}
+
+
+.card3-text {
+  font-size: 120;
+  font-family: 'Emad-Diana eXtra';
+  border-radius: 15%; 
+  transform: translate(70px, 20%); 
+}
+
+
+
+.modified2-Play {
+  background-color: rgb(68, 85, 75);
+  left: 10px;
+  right: 8cm;
+  font-size: 100;
+  font-family: 'Emad-Diana eXtra';
+  border-radius: 15%; 
+  transform: translate(150px, 10%); 
+}
+
+
+.modified2-Stop {
+  background-color: rgb(68, 85, 75);;
+  top: 20%;
+  font-family: 'Emad-Diana eXtra';
+  border-radius: 15%; 
+  font-size: 100;
+  bottom: 5%; 
+  transform: translate(250px, 10%); 
+}
+
+
+.modified2-volum{
+
+  color: rgb(38, 48, 42);;
+  font-family: 'Emad-Diana eXtra';
+  transform: translate(100px, 500px); 
+  
+  font-size: 80;
+
+}
+
+
+
+.modified2-Time0{
+  font-family: 'Emad-Diana eXtra';
+  font-size: 80;
+  transform: translate(1px, 10px); 
+}
+
+.range3{
+  transform: translate(15px, 10px); 
+  width: 90%
+  
+}
+
+.modified2-Vol{
+  width: 90%;
+  color: black;
+  transform: translate(-10px, 150px); 
+}
+
+
+
+
+
 .playlist-card4{
   background-color: aliceblue;
   border: 1px solid #fff;
- min-height: 31em;
- width: 230px;
+ min-height: 50em;
+ width: 55em;
  overflow: hidden;
  border-radius: 10px;
- margin: 300px;
+ margin: 30px;
  position: absolute; 
- top: 41cm;
- left: 30cm; 
+ top: 172cm;
  margin: 0 auto;
  position: absolute;
- left: 0cm;
- right: 10cm;
+ left: 0;
+ right: 0;
  transform: scale(0.8);
   transition: transform 0.5s;
   flex-wrap: wrap;
 }
+
+
+.card4-text {
+  font-size: 120;
+  font-family: 'Emad-Diana eXtra';
+  border-radius: 15%; 
+  transform: translate(70px, 20%); 
+}
+
+
+
+.modified3-Play {
+  background-color: rgb(68, 85, 75);
+  left: 10px;
+  right: 8cm;
+  font-size: 100;
+  font-family: 'Emad-Diana eXtra';
+  border-radius: 15%; 
+  transform: translate(150px, 10%); 
+}
+
+
+.modified3-Stop {
+  background-color: rgb(68, 85, 75);;
+  top: 20%;
+  font-family: 'Emad-Diana eXtra';
+  border-radius: 15%; 
+  font-size: 100;
+  bottom: 5%; 
+  transform: translate(250px, 10%); 
+}
+
+
+.modified3-volum{
+
+  color: rgb(38, 48, 42);;
+  font-family: 'Emad-Diana eXtra';
+  transform: translate(100px, 500px); 
   
+  font-size: 80;
+
+}
+
+
+
+.modified3-Time0{
+  font-family: 'Emad-Diana eXtra';
+  font-size: 80;
+  transform: translate(1px, 10px); 
+}
+
+.range3{
+  transform: translate(15px, 10px); 
+  width: 90%
+  
+}
+
+.modified3-Vol{
+  width: 90%;
+  color: black;
+  transform: translate(-10px, 150px); 
+}
+
+
+
+
+
 .playlist-card5{
   background-color: aliceblue;
   border: 1px solid #fff;
- min-height: 31em;
- width: 230px;
+ min-height: 50em;
+ width: 55em;
  overflow: hidden;
  border-radius: 10px;
- margin: 300px;
+ margin: 30px;
  position: absolute; 
- top: 41cm;
- left: 30cm; 
+ top: 220cm;
  margin: 0 auto;
  position: absolute;
- left: 10cm;
- right: 0cm;
+ left: 0;
+ right: 0;
  transform: scale(0.8);
   transition: transform 0.5s;
   flex-wrap: wrap;
 }
+
+
+.card4-text {
+  font-size: 120;
+  font-family: 'Emad-Diana eXtra';
+  border-radius: 15%; 
+  transform: translate(70px, 20%); 
+}
+
+
+
+.modified4-Play {
+  background-color: rgb(68, 85, 75);
+  left: 10px;
+  right: 8cm;
+  font-size: 100;
+  font-family: 'Emad-Diana eXtra';
+  border-radius: 15%; 
+  transform: translate(150px, 10%); 
+}
+
+
+.modified4-Stop {
+  background-color: rgb(68, 85, 75);;
+  top: 20%;
+  font-family: 'Emad-Diana eXtra';
+  border-radius: 15%; 
+  font-size: 100;
+  bottom: 5%; 
+  transform: translate(250px, 10%); 
+}
+
+
+.modified4-volum{
+
+  color: rgb(38, 48, 42);;
+  font-family: 'Emad-Diana eXtra';
+  transform: translate(100px, 500px); 
+  
+  font-size: 80;
+
+}
+
+
+
+.modified4-Time0{
+  font-family: 'Emad-Diana eXtra';
+  font-size: 80;
+  transform: translate(1px, 10px); 
+}
+
+.range4{
+  transform: translate(15px, 10px); 
+  width: 90%
+  
+}
+
+.modified4-Vol{
+  width: 90%;
+  color: black;
+  transform: translate(-10px, 150px); 
+}
+
+
+
+
 
 
 .list{
 
   background-color: black;
   background-size: cover;
-  height: 32cm;
+  height: 250cm;
   border-radius: 75px;
 }
 
@@ -730,3 +1065,4 @@ transform: translate(-80px, 55px);
 color:rgb(94, 119, 104); ;
 
 }
+
