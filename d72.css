@@ -2,6 +2,8 @@
 
 
 
+
+
 body {
   background-image: url("backgrond2.png");
     background-size: cover;
@@ -603,11 +605,12 @@ transform: translate(-80px, 55px);
     border: 1px solid #fff;
    min-height: 50em;
    width: 55em;
+   height: 135em;
    overflow: hidden;
    border-radius: 10px;
    margin: 30px;
    position: absolute; 
-   top: 28cm;
+   top: 30cm;
    margin: 0 auto;
    position: absolute;
    left: 0;
@@ -651,7 +654,7 @@ transform: translate(-80px, 55px);
 color: rgb(38, 48, 42);;
   font-family: 'Emad-Diana eXtra';
   transform: translate(100px, 500px); 
-  
+  top: 20%;
   font-size: 80;
 
 }
@@ -661,11 +664,11 @@ color: rgb(38, 48, 42);;
 .Time0{
   font-family: 'Emad-Diana eXtra';
   font-size: 80;
-  transform: translate(1px, 10px); 
+  transform: translate(1px, 50px); 
 }
 
 .range{
-transform: translate(15px, 10px); 
+transform: translate(15px, 120px); 
 width: 90%
 
 }
@@ -697,9 +700,10 @@ transform: translate(-280px, 150px);
  width: 55em;
  overflow: hidden;
  border-radius: 10px;
+ height: 135em;
  margin: 30px;
  position: absolute; 
- top: 75cm;
+ top: 80cm;
  margin: 0 auto;
  position: absolute;
  left: 0;
@@ -746,8 +750,9 @@ transform: translate(-280px, 150px);
   color: rgb(38, 48, 42);;
   font-family: 'Emad-Diana eXtra';
   transform: translate(100px, 500px); 
-  
+  top: 20%;
   font-size: 80;
+
 
 }
 
@@ -756,11 +761,11 @@ transform: translate(-280px, 150px);
 .modified-Time0{
   font-family: 'Emad-Diana eXtra';
   font-size: 80;
-  transform: translate(1px, 10px); 
+  transform: translate(1px, 50px); 
 }
 
 .range2{
-  transform: translate(15px, 10px); 
+  transform: translate(15px, 120px); 
   width: 90%
   
 }
@@ -768,7 +773,7 @@ transform: translate(-280px, 150px);
 .modified-Vol{
   width: 120%;
   color: black;
-  transform: translate(-10px, 150px); 
+  transform: translate(-280px, 150px); 
 }
 
 
@@ -780,11 +785,12 @@ transform: translate(-280px, 150px);
   border: 1px solid #fff;
  min-height: 50em;
  width: 55em;
+ height: 135em;
  overflow: hidden;
  border-radius: 10px;
  margin: 30px;
  position: absolute; 
- top: 123cm;
+ top: 130cm;
  margin: 0 auto;
  position: absolute;
  left: 0;
@@ -831,8 +837,9 @@ transform: translate(-280px, 150px);
   color: rgb(38, 48, 42);;
   font-family: 'Emad-Diana eXtra';
   transform: translate(100px, 500px); 
-  
+  top: 20%;
   font-size: 80;
+
 
 }
 
@@ -841,19 +848,18 @@ transform: translate(-280px, 150px);
 .modified2-Time0{
   font-family: 'Emad-Diana eXtra';
   font-size: 80;
-  transform: translate(1px, 10px); 
+  transform: translate(1px, 50px); 
 }
 
-.range3{
-  transform: translate(15px, 10px); 
-  width: 90%
-  
+.range3a{
+  transform: translate(15px, 120px); 
+width: 90%
 }
 
 .modified2-Vol{
-  width: 90%;
+  width: 120%;
   color: black;
-  transform: translate(-10px, 150px); 
+  transform: translate(-280px, 150px); 
 }
 
 
@@ -865,11 +871,12 @@ transform: translate(-280px, 150px);
   border: 1px solid #fff;
  min-height: 50em;
  width: 55em;
+ height: 135em;
  overflow: hidden;
  border-radius: 10px;
  margin: 30px;
  position: absolute; 
- top: 172cm;
+ top: 180cm;
  margin: 0 auto;
  position: absolute;
  left: 0;
@@ -916,7 +923,7 @@ transform: translate(-280px, 150px);
   color: rgb(38, 48, 42);;
   font-family: 'Emad-Diana eXtra';
   transform: translate(100px, 500px); 
-  
+  top: 20%;
   font-size: 80;
 
 }
@@ -926,19 +933,19 @@ transform: translate(-280px, 150px);
 .modified3-Time0{
   font-family: 'Emad-Diana eXtra';
   font-size: 80;
-  transform: translate(1px, 10px); 
+  transform: translate(1px, 50px); 
 }
 
 .range3{
-  transform: translate(15px, 10px); 
-  width: 90%
+  transform: translate(15px, 120px); 
+width: 90%
   
 }
 
 .modified3-Vol{
-  width: 90%;
+  width: 120%;
   color: black;
-  transform: translate(-10px, 150px); 
+  transform: translate(-280px, 150px); 
 }
 
 
@@ -950,11 +957,12 @@ transform: translate(-280px, 150px);
   border: 1px solid #fff;
  min-height: 50em;
  width: 55em;
+ height: 135em;
  overflow: hidden;
  border-radius: 10px;
  margin: 30px;
  position: absolute; 
- top: 220cm;
+ top: 230cm;
  margin: 0 auto;
  position: absolute;
  left: 0;
@@ -1001,7 +1009,7 @@ transform: translate(-280px, 150px);
   color: rgb(38, 48, 42);;
   font-family: 'Emad-Diana eXtra';
   transform: translate(100px, 500px); 
-  
+  top: 20%;
   font-size: 80;
 
 }
@@ -1011,19 +1019,19 @@ transform: translate(-280px, 150px);
 .modified4-Time0{
   font-family: 'Emad-Diana eXtra';
   font-size: 80;
-  transform: translate(1px, 10px); 
+  transform: translate(1px, 50px); 
 }
 
 .range4{
-  transform: translate(15px, 10px); 
-  width: 90%
+  transform: translate(15px, 120px); 
+width: 90%
   
 }
 
 .modified4-Vol{
-  width: 90%;
+  width: 120%;
   color: black;
-  transform: translate(-10px, 150px); 
+  transform: translate(-280px, 150px); 
 }
 
 
@@ -1035,7 +1043,7 @@ transform: translate(-280px, 150px);
 
   background-color: black;
   background-size: cover;
-  height: 250cm;
+  height: 265cm;
   border-radius: 75px;
 }
 
@@ -1065,4 +1073,5 @@ transform: translate(-280px, 150px);
 color:rgb(94, 119, 104); ;
 
 }
+
 
