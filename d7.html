@@ -4,7 +4,7 @@
   <link rel="stylesheet" type="text/css" href="d72.css">
 </head>
   <div class="blue-bar">
-    <a href="dontcopy.html">
+    <a href="C:\Users\d7\Desktop\d7\dontcopy\dontcopy.html">
       <img src="d7.png" class="D7no" style="border-radius: 50%; width: 80px; height: 80px;">
       <a href="https://www.instagram.com/8aey/">
         <img src="instagram.png" class="instagram-icon"  style="right: 20cm; width: 40px; height: 40px;  top: 15%;     border: none;">
@@ -143,15 +143,19 @@
     var modifiedProgressBar = document.getElementById("modified-progress");
 
     function playModifiedAudio() {
-      if (modifiedPlaying) {
-        modifiedAudio.pause();
-        modifiedPlaying = false;
-      } else {
-        modifiedAudio.play();
-        modifiedPlaying = true;
-      }
-    }
-    
+  if (modifiedPlaying) {
+    modifiedAudio.pause();
+    modifiedPlaying = false;
+  } else {
+    modifiedAudio.play();
+    modifiedPlaying = true;
+  }
+
+  // Stop the first audio when playing the second audio
+  audio.pause();
+  audio.currentTime = 0;
+  playing = false;
+}
 
     function stopModifiedAudio() {
       modifiedAudio.pause();
@@ -417,9 +421,393 @@
 
 
     
-  </script>
+</script>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="playlist-card6">
+  <div class="list-image">
+    <img src="wegz.png" />
+    <strong class="card5-text">
+    <span>Wegz - Amira</span>
+    </strong>
+    <button class="modified5-Play" onclick="playModified5Audio()">Play</button>
+    <button class="modified5-Stop" onclick="stopModified5Audio()">Stop</button>
+    <input type="range" min="0" max="1" step="0.1" value="1" id="modified5-volume" class="modified5-Vol">
+    <label for="modified5-volume" class="modified5-volum">Volume</label>
+    <div id="modified5-time" class="modified5-Time0">0:00</div>
+    <div class="modified5-Time0">Time</div>
+    <input type="range" min="0" max="100" value="0" id="modified5-progress" class="range5">
+  </div>
+</div>
+
+
+
+<audio id="modified5-audio">
+  <source src="Wegz X @Ash  - Amira (Official Audio) .mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  var modified5Audio = document.getElementById("modified5-audio");
+  var modified5Playing = false;
+  var modified5TimeDiv = document.getElementById("modified5-time");
+  var modified5ProgressBar = document.getElementById("modified5-progress");
+
+  function playModified5Audio() {
+    if (modified5Playing) {
+      modified5Audio.pause();
+      modified5Playing = false;
+    } else {
+      modified5Audio.play();
+      modified5Playing = true;
+    }
+  }
+  
+
+  function stopModified5Audio() {
+    modified5Audio.pause();
+    modified5Audio.currentTime = 0;
+    modified5Playing = false;
+    updateModified5Time();
+    modified5ProgressBar.value = 0;
+  }
+
+  function updateModified5Time() {
+    var modified5Minutes = Math.floor(modified5Audio.currentTime / 60);
+    var modified5Seconds = Math.floor(modified5Audio.currentTime % 60);
+    if (modified5Seconds < 10) {
+      modified5Seconds = "0" + modified5Seconds;
+    }
+    modified5TimeDiv.innerHTML = modified5Minutes + ":" + modified5Seconds;
+    modified5ProgressBar.value = (modified5Audio.currentTime / modified5Audio.duration) * 100;
+  }
+
+  modified5Audio.ontimeupdate = updateModified5Time;
+
+  var modified5VolumeSlider = document.getElementById("modified5-volume");
+    modified5VolumeSlider.oninput = function() {
+      modified5Audio.volume = this.value;
+    }
+
+    modified5ProgressBar.oninput = function() {
+      modified5Audio.currentTime = (this.value / 100) * modified5Audio.duration;
+    }
+
+</script>
+
+
+
+<div class="playlist-card7">
+  <div class="list-image">
+    <img src="Shabjdeed.png" />
+    <strong class="card6-text">
+    <span>Shabjdeed</span>
+    </strong>
+    <button class="modified6-Play" onclick="playModified6Audio()">Play</button>
+    <button class="modified6-Stop" onclick="stopModified6Audio()">Stop</button>
+    <input type="range" min="0" max="1" step="0.1" value="1" id="modified6-volume" class="modified5-Vol">
+    <label for="modified6-volume" class="modified6-volum">Volume</label>
+    <div id="modified6-time" class="modified6-Time0">0:00</div>
+    <div class="modified6-Time0">Time</div>
+    <input type="range" min="0" max="100" value="0" id="modified6-progress" class="range6">
+  </div>
+</div>
+
+
+
+<audio id="modified6-audio">
+  <source src="Aghla Al-Ghawali.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  var modified6Audio = document.getElementById("modified6-audio");
+  var modified6Playing = false;
+  var modified6TimeDiv = document.getElementById("modified6-time");
+  var modified6ProgressBar = document.getElementById("modified6-progress");
+
+  function playModified6Audio() {
+    if (modified6Playing) {
+      modified6Audio.pause();
+      modified6Playing = false;
+    } else {
+      modified6Audio.play();
+      modified6Playing = true;
+    }
+  }
+  
+
+  function stopModified6Audio() {
+    modified6Audio.pause();
+    modified6Audio.currentTime = 0;
+    modified6Playing = false;
+    updateModified6Time();
+    modified6ProgressBar.value = 0;
+  }
+
+  function updateModified6Time() {
+    var modified6Minutes = Math.floor(modified6Audio.currentTime / 60);
+    var modified6Seconds = Math.floor(modified6Audio.currentTime % 60);
+    if (modified6Seconds < 10) {
+      modified6Seconds = "0" + modified6Seconds;
+    }
+    modified6TimeDiv.innerHTML = modified6Minutes + ":" + modified6Seconds;
+    modified6ProgressBar.value = (modified6Audio.currentTime / modified6Audio.duration) * 100;
+  }
+
+  modified6Audio.ontimeupdate = updateModified6Time;
+
+  var modified6VolumeSlider = document.getElementById("modified6-volume");
+    modified6VolumeSlider.oninput = function() {
+      modified6Audio.volume = this.value;
+    }
+
+    modified6ProgressBar.oninput = function() {
+      modified6Audio.currentTime = (this.value / 100) * modified6Audio.duration;
+    }
+
+</script>
+
+
+
+
+
+
+
+<div class="playlist-card8">
+  <div class="list-image">
+    <img src="Mohammed Saeed.png" />
+    <strong class="card7-text">
+    <span>Mohammed Saeed</span>
+    </strong>
+    <button class="modified7-Play" onclick="playModified7Audio()">Play</button>
+    <button class="modified7-Stop" onclick="stopModified7Audio()">Stop</button>
+    <input type="range" min="0" max="1" step="0.1" value="1" id="modified7-volume" class="modified5-Vol">
+    <label for="modified7-volume" class="modified7-volum">Volume</label>
+    <div id="modified7-time" class="modified7-Time0">0:00</div>
+    <div class="modified7-Time0">Time</div>
+    <input type="range" min="0" max="100" value="0" id="modified7-progress" class="range7">
+  </div>
+</div>
+
+
+
+<audio id="modified7-audio">
+  <source src="Mohammed Saeed - Konty 2olely .mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  var modified7Audio = document.getElementById("modified7-audio");
+  var modified7Playing = false;
+  var modified7TimeDiv = document.getElementById("modified7-time");
+  var modified7ProgressBar = document.getElementById("modified7-progress");
+
+  function playModified7Audio() {
+    if (modified7Playing) {
+      modified7Audio.pause();
+      modified7Playing = false;
+    } else {
+      modified7Audio.play();
+      modified7Playing = true;
+    }
+  }
+  
+
+  function stopModified7Audio() {
+    modified7Audio.pause();
+    modified7Audio.currentTime = 0;
+    modified7Playing = false;
+    updateModified7Time();
+    modified7ProgressBar.value = 0;
+  }
+
+  function updateModified7Time() {
+    var modified7Minutes = Math.floor(modified7Audio.currentTime / 60);
+    var modified7Seconds = Math.floor(modified7Audio.currentTime % 60);
+    if (modified7Seconds < 10) {
+      modified7Seconds = "0" + modified7Seconds;
+    }
+    modified7TimeDiv.innerHTML = modified7Minutes + ":" + modified7Seconds;
+    modified7ProgressBar.value = (modified7Audio.currentTime / modified7Audio.duration) * 100;
+  }
+
+  modified7Audio.ontimeupdate = updateModified7Time;
+
+  var modified7VolumeSlider = document.getElementById("modified7-volume");
+    modified7VolumeSlider.oninput = function() {
+      modified7Audio.volume = this.value;
+    }
+
+    modified7ProgressBar.oninput = function() {
+      modified7Audio.currentTime = (this.value / 100) * modified7Audio.duration;
+    }
+
+</script>
+
+
+
+
+
+<div class="playlist-card9">
+  <div class="list-image">
+    <img src="Jadal.png" />
+    <strong class="card8-text">
+    <span>Wahdeh - Jadal</span>
+    </strong>
+    <button class="modified8-Play" onclick="playModified8Audio()">Play</button>
+    <button class="modified8-Stop" onclick="stopModified8Audio()">Stop</button>
+    <input type="range" min="0" max="1" step="0.1" value="1" id="modified8-volume" class="modified5-Vol">
+    <label for="modified8-volume" class="modified8-volum">Volume</label>
+    <div id="modified8-time" class="modified8-Time0">0:00</div>
+    <div class="modified8-Time0">Time</div>
+    <input type="range" min="0" max="100" value="0" id="modified8-progress" class="range8">
+  </div>
+</div>
+
+
+
+<audio id="modified8-audio">
+  <source src="Wahdeh Bteshbahek.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  var modified8Audio = document.getElementById("modified8-audio");
+  var modified8Playing = false;
+  var modified8TimeDiv = document.getElementById("modified8-time");
+  var modified8ProgressBar = document.getElementById("modified8-progress");
+
+  function playModified8Audio() {
+    if (modified8Playing) {
+      modified8Audio.pause();
+      modified8Playing = false;
+    } else {
+      modified8Audio.play();
+      modified8Playing = true;
+    }
+  }
+  
+
+  function stopModified8Audio() {
+    modified8Audio.pause();
+    modified8Audio.currentTime = 0;
+    modified8Playing = false;
+    updateModified8Time();
+    modified8ProgressBar.value = 0;
+  }
+
+  function updateModified8Time() {
+    var modified8Minutes = Math.floor(modified8Audio.currentTime / 60);
+    var modified8Seconds = Math.floor(modified8Audio.currentTime % 60);
+    if (modified8Seconds < 10) {
+      modified8Seconds = "0" + modified8Seconds;
+    }
+    modified8TimeDiv.innerHTML = modified8Minutes + ":" + modified8Seconds;
+    modified8ProgressBar.value = (modified8Audio.currentTime / modified8Audio.duration) * 100;
+  }
+
+  modified8Audio.ontimeupdate = updateModified8Time;
+
+  var modified8VolumeSlider = document.getElementById("modified8-volume");
+    modified8VolumeSlider.oninput = function() {
+      modified8Audio.volume = this.value;
+    }
+
+    modified8ProgressBar.oninput = function() {
+      modified8Audio.currentTime = (this.value / 100) * modified8Audio.duration;
+    }
+
+</script>
+
+
+<div class="playlist-card10">
+  <div class="list-image">
+    <img src="Ayed.png" />
+    <strong class="card9-text">
+    <span>Ayed - Tejene</span>
+    </strong>
+    <button class="modified9-Play" onclick="playModified9Audio()">Play</button>
+    <button class="modified9-Stop" onclick="stopModified9Audio()">Stop</button>
+    <input type="range" min="0" max="1" step="0.1" value="1" id="modified9-volume" class="modified5-Vol">
+    <label for="modified9-volume" class="modified9-volum">Volume</label>
+    <div id="modified9-time" class="modified9-Time0">0:00</div>
+    <div class="modified9-Time0">Time</div>
+    <input type="range" min="0" max="100" value="0" id="modified9-progress" class="range8">
+  </div>
+</div>
+
+
+
+<audio id="modified9-audio">
+  <source src="Ayed - Tejene.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  var modified9Audio = document.getElementById("modified9-audio");
+  var modified9Playing = false;
+  var modified9TimeDiv = document.getElementById("modified9-time");
+  var modified9ProgressBar = document.getElementById("modified9-progress");
+
+  function playModified9Audio() {
+    if (modified9Playing) {
+      modified9Audio.pause();
+      modified9Playing = false;
+    } else {
+      modified9Audio.play();
+      modified9Playing = true;
+    }
+  }
+  
+
+  function stopModified9Audio() {
+    modified9Audio.pause();
+    modified9Audio.currentTime = 0;
+    modified9Playing = false;
+    updateModified9Time();
+    modified9ProgressBar.value = 0;
+  }
+
+  function updateModified9Time() {
+    var modified9Minutes = Math.floor(modified9Audio.currentTime / 60);
+    var modified9Seconds = Math.floor(modified9Audio.currentTime % 60);
+    if (modified9Seconds < 10) {
+      modified9Seconds = "0" + modified9Seconds;
+    }
+    modified9TimeDiv.innerHTML = modified9Minutes + ":" + modified9Seconds;
+    modified9ProgressBar.value = (modified9Audio.currentTime / modified9Audio.duration) * 100;
+  }
+
+  modified9Audio.ontimeupdate = updateModified9Time;
+
+  var modified9VolumeSlider = document.getElementById("modified9-volume");
+    modified9VolumeSlider.oninput = function() {
+      modified9Audio.volume = this.value;
+    }
+
+    modified9ProgressBar.oninput = function() {
+      modified9Audio.currentTime = (this.value / 100) * modified9Audio.duration;
+    }
+
+</script>
 
 </section>
 
